@@ -148,9 +148,9 @@ def main():
             style = st.selectbox("Watermark Style", ["mosaic", "centered"], key="watermark_style")
             
             st.write("**Transparency:** Recommended transparency is from 0.1 to 0.2.")
-            transparency = st.slider("Transparency", 0.0, 0.5, 0.5, key="transparency")
+            transparency = st.slider("Transparency", 0.0, 0.5, 0.1, key="transparency")
 
-            scale = st.slider("Scale (as a percentage of the page width)", 0.1, 1.0, 0.5, key="scale")
+            scale = st.slider("Scale (as a percentage of the page width)", 0.0, 1.0, 0.3, key="scale")
 
         if st.button("Merge PDFs", key="merge_button"):
             if uploaded_files:
